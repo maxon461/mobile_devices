@@ -65,14 +65,15 @@ public abstract class Mobile_device {
     }
 
     public void get_info(){
-        System.out.println("Ur device from " + get_producent() + "/n"+"Processor is " + get_processor() + 
-            "/n" + "Ur OS " + get_system() + "/n" + "U have " + get_rom() + " of ROM and " + get_ram() + 
+        System.out.println("Ur device from " + get_producent() + " "+"Processor is " + get_processor() + 
+            " " + "Ur OS " + get_system() + " " + "U have " + get_rom() + " of ROM and " + get_ram() + 
                 " of RAM");
         get_charging();
         get_if_work();
     }
     public static void main(String[] args) {
-        Mobile_device macbook = new laptop();
+        laptop macbook = new laptop();
+        macbook.get_info();
 
     }
 }
