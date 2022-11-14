@@ -1,10 +1,9 @@
 package main;
-
-import java.util.*;
 import headers.*;
-import java.math.*;
 
-public class Mobile_device {
+
+
+public abstract class Mobile_device {
     protected String producent;
     protected String operation_system;
     protected String processor;
@@ -18,7 +17,7 @@ public class Mobile_device {
         this.if_work = false;
     };
 
-    Mobile_device(String producent, String operation_system, String processor, int rom, int ram, boolean charging,
+    public  Mobile_device(String producent, String operation_system, String processor, int rom, int ram, boolean charging,
             boolean if_work, Boolean pour_out_the_water) {
         this.producent = producent;
         this.operation_system = operation_system;
@@ -29,7 +28,7 @@ public class Mobile_device {
         this.if_work = if_work;
     }
 
-    Mobile_device() {
+    public Mobile_device() {
         this.producent = "Apple";
         this.operation_system = "MacOS";
         this.processor = "M1 Pro";
@@ -73,7 +72,7 @@ public class Mobile_device {
         get_if_work();
     }
     public static void main(String[] args) {
-        Mobile_device macbook = new Mobile_device();
-        macbook.get_info();
+        Mobile_device macbook = new laptop();
+
     }
 }
