@@ -17,11 +17,11 @@ public class laptop extends Mobile_device{
 
     }
 
-    public laptop(String producent, String operation_system, String processor, int rom, int ram, boolean charging,
+    public laptop(String brand, String operation_system, String processor, int rom, int ram, boolean charging,
             boolean if_work, Boolean pour_out_the_water, int amount_of_USB, boolean cd_reader, String type_of_rom,
             String type_of_keyboard, boolean touch_screen) {
 
-        super(producent, operation_system, processor, rom, ram, charging,
+        super(brand, operation_system, processor, rom, ram, charging,
                 if_work, pour_out_the_water);
         this.amount_of_USB = amount_of_USB;
         this.cd_reader = cd_reader;
@@ -57,12 +57,7 @@ public class laptop extends Mobile_device{
     }
 
     public void get_info() {
-        System.out.println("Ur device from " + get_producent() +" Processor is " + get_processor() + 
-              " Ur OS " + get_system()  + " U have " + get_rom() + " of ROM and " + get_ram() + 
-                " of RAM");
-        get_charging();
-        get_if_work();
-
+        super.get_info();
         System.out.println("Here is " + get_amount_of_USB() + " USB ports " + "and type of rom is " + get_type_of_rom()
                 + " the type of keyboard is " + get_type_of_keyboard());
 

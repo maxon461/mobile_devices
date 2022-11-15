@@ -1,6 +1,6 @@
 package headers;
 public abstract class Mobile_device {
-    protected String producent;
+    protected String brand;
     protected String operation_system;
     protected String processor;
     protected int rom;
@@ -13,9 +13,9 @@ public abstract class Mobile_device {
         this.if_work = false;
     };
 
-    public  Mobile_device(String producent, String operation_system, String processor, int rom, int ram, boolean charging,
+    public  Mobile_device(String brand, String operation_system, String processor, int rom, int ram, boolean charging,
             boolean if_work, Boolean pour_out_the_water) {
-        this.producent = producent;
+        this.brand = brand;
         this.operation_system = operation_system;
         this.processor = processor;
         this.rom = rom;
@@ -25,7 +25,7 @@ public abstract class Mobile_device {
     }
 
     public Mobile_device() {
-        this.producent = "Apple";
+        this.brand = "Apple";
         this.operation_system = "MacOS";
         this.processor = "M1 Pro";
         this.rom = 512;
@@ -34,8 +34,8 @@ public abstract class Mobile_device {
         this.if_work = true;
     }
 
-    public String get_producent() {
-        return this.producent;
+    public String get_brand() {
+        return this.brand;
     }
 
     public String get_system() {
@@ -61,7 +61,7 @@ public abstract class Mobile_device {
     }
 
     public void get_info(){
-        System.out.println("Ur device from " + get_producent() +" Processor is " + get_processor() + 
+        System.out.println("Ur device from " + get_brand() +" Processor is " + get_processor() + 
               " Ur OS " + get_system()  + " U have " + get_rom() + " of ROM and " + get_ram() + 
                 " of RAM");
         get_charging();
