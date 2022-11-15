@@ -1,8 +1,4 @@
-package main;
-import headers.*;
-
-
-
+package headers;
 public abstract class Mobile_device {
     protected String producent;
     protected String operation_system;
@@ -65,15 +61,10 @@ public abstract class Mobile_device {
     }
 
     public void get_info(){
-        System.out.println("Ur device from " + get_producent() + " "+"Processor is " + get_processor() + 
-            " " + "Ur OS " + get_system() + " " + "U have " + get_rom() + " of ROM and " + get_ram() + 
+        System.out.println("Ur device from " + get_producent() +" Processor is " + get_processor() + 
+              " Ur OS " + get_system()  + " U have " + get_rom() + " of ROM and " + get_ram() + 
                 " of RAM");
         get_charging();
         get_if_work();
-    }
-    public static void main(String[] args) {
-        laptop macbook = new laptop();
-        macbook.get_info();
-
     }
 }

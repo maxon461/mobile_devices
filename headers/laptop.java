@@ -1,8 +1,6 @@
 package headers;
 
-import main.Mobile_device;
-
-public class laptop extends Mobile_device {
+public class laptop extends Mobile_device{
     protected int amount_of_USB;
     protected String type_of_rom;
     public String type_of_keyboard;
@@ -10,7 +8,8 @@ public class laptop extends Mobile_device {
     protected boolean touch_screen;
 
     public laptop() {
-
+        super("Asus" , "windows" , "ryzen 7" , 512 , 16 , true , true , 
+        false );
         this.amount_of_USB = 1;
         this.cd_reader = true;
         type_of_rom = "HDD";
@@ -58,12 +57,12 @@ public class laptop extends Mobile_device {
     }
 
     public void get_info() {
-        System.out.println("Ur device from " + get_producent() + "/n"+"Processor is " + get_processor() + 
-            "/n" + "Ur OS " + get_system() + "/n" + "U have " + get_rom() + " of ROM and " + get_ram() + 
+        System.out.println("Ur device from " + get_producent() +" Processor is " + get_processor() + 
+              " Ur OS " + get_system()  + " U have " + get_rom() + " of ROM and " + get_ram() + 
                 " of RAM");
         get_charging();
         get_if_work();
-        
+
         System.out.println("Here is " + get_amount_of_USB() + " USB ports " + "and type of rom is " + get_type_of_rom()
                 + " the type of keyboard is " + get_type_of_keyboard());
 
