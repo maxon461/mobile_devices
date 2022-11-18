@@ -46,7 +46,7 @@ public class laptop extends Mobile_device{
         if (cd_reader)
             System.out.println("CD reader is here");
         else
-            System.out.println("There is no CD reader here :(");
+            System.out.println("There is no CD reader here :("); // remove :(
     }
 
     public void get_touch_screen() {
