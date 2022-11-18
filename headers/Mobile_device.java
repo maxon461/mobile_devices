@@ -8,7 +8,7 @@ public abstract class Mobile_device {
     protected boolean charging;
     protected boolean if_work;
 
-    protected void pour_out_the_water() {
+    public void pour_out_the_water() {
         this.charging = false;
         this.if_work = false;
     };

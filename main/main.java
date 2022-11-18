@@ -12,6 +12,10 @@ public abstract class main {
         service steve = new service();
         steve.add_rom(lenovo, 100);
         lenovo.get_info();
-
+        lenovo.pour_out_the_water();
+        lenovo.get_info();
+        steve.repair_charge(lenovo);
+        steve.repair_device(lenovo);
+        lenovo.get_info();
     }
 }
