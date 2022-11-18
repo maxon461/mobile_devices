@@ -37,21 +37,22 @@ public class smartphone extends Mobile_device {
 
     public void get_dual_sim() {
         if (this.dual_sim)
-            System.out.println("U have dual sim");
+            System.out.println("You have dual sim");
         else
-            System.out.println("u dont have dual sim");
+            System.out.println("You don't have dual sim");
     }
 
     public void get_apple_pay() {
         if (this.apple_pay)
-            System.out.println("U can pay using Apple Pay");
+            System.out.println("You can pay using Apple Pay");
         else
-            System.out.println("Sry , u cant pay using Apple Pay");
+            System.out.println("Sorry, you can't pay using Apple Pay");
     }
 
     public void get_info(){
         super.get_info();
-        System.out.println("Ur phone model is " + this.model + " and ur main camera resolution is " + this.main_camera_resolution );  
+        System.out.println("Your phone model is " + this.model + " and your main camera resolution is " 
+                            + this.main_camera_resolution);  
         get_apple_pay();
         get_dual_sim();
     }
